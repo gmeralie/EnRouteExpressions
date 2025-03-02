@@ -70,7 +70,7 @@ function Level4.loadLevel()
 	addTile("minus", 9, 6, 1)
 	addTile("start", 6, 7)
 	addTile("exit", 11, 6, 2)
-	player = player(6, 7)
+	player = Player(6, 7)
 end
 
 Level5 = Object:extend()
