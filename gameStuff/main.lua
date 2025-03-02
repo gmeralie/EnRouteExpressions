@@ -11,7 +11,7 @@ function love.load()
 	love.window.setTitle("EnRouteExpressions")
 	love.window.setMode(800, 600, {resizable=true, minwidth=400, minheight=300})
 	background = love.graphics.newImage("assets/patterned.png")
-	maxLevels = 6
+	maxLevels = 9
 	levels = {}
 	table.insert(levels, 0, StartScreen())
 	table.insert(levels, 1, Level1())
@@ -20,6 +20,9 @@ function love.load()
 	table.insert(levels, 4, Level4())
 	table.insert(levels, 5, Level5())
 	table.insert(levels, 6, Level6())
+	table.insert(levels, 7, Level7())
+	table.insert(levels, 8, Level8())
+	table.insert(levels, 9, Level9())
 	levels.gameOver = YouWin()
 	currLevelIndex = 0
 	currLevel = levels[0]
@@ -59,12 +62,13 @@ function love.update()
 			if v.value == player.value then
 				print("You Win!")
 				currLevelIndex = currLevelIndex+1
-				currLevel = levels[currLevelIndex]
 				if currLevelIndex > maxLevels then
 					currLevel = levels.gameOver
 					currLevelIndex = 1000
+				else
+					currLevel = levels[currLevelIndex]
 				end
-				currLevel:loadLevel()
+				currLevel.loadLevel()
 			end
 		end
 	end
