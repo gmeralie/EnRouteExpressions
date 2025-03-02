@@ -5,6 +5,9 @@ To play, you can download EnRouteExpressions_v---.zip file. It contains the requ
 
 
 # PATCH NOTES
+--Ver 0.2.1
+Fixed an issue where upon completing the third leel, the game would crash
+
 
 --Ver. 0.2
 Now accounts for double-digits in gameplay. 
