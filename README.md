@@ -2,9 +2,13 @@
  Contains a more up-to-date version of EnRouteExpressions, written in Lua using LOVE
 
 To play, you can download EnRouteExpressions_v---.zip file. It contains the required files to run. Extract it and run EnRouteExpressions.exe, and you should be good to go
+It's best to use the most recent version.
 
 
 # PATCH NOTES
+--Ver 0.2.2.1
+Fixed an issue with the file compression, game is playable again
+
 --Ver 0.2.2
 Fixed more crashes due to typos
 
